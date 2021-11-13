@@ -1,0 +1,446 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+/* navbar-------------------------------------------------------------------*/
+.logo{
+	width: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.logo img{
+	height: 100px;
+  width: 170px;
+  object-fit: cover;
+  object-position: 50% 50%;
+	border: #5e879d;
+	border-radius: 0%;
+}
+.navbar{
+	display: flex;
+	background-color:#5e879d;
+	
+}
+.nav-list{
+	width:90%;
+	display: flex;
+	align-items: center;
+	
+	
+}
+.nav-list li{
+	list-style: none;
+	padding: 10px 20px;
+	
+}
+.nav-list li a{
+	text-decoration: none;
+	color:aliceblue;
+	font-size: 25px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+.nav-list li a:hover{
+		color: antiquewhite;
+}
+
+.rightNav{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 10%;	
+}
+.rlist{
+	list-style: none;
+	padding: 7px 10px;
+	background: #2b3245; 
+	border-radius: 9px;
+	cursor: pointer;
+}
+.login-btn{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	border:none;
+	background: #2b3245;
+	font-size: 20px;
+	color: #57abff;
+	cursor: pointer;		
+}
+
+.btn:hover{
+	color: antiquewhite;
+	
+}
+
+
+/* bg and text-1st-------------------------------------------------------------------------*/
+.box-main{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bg img{
+	width: 1920px;
+	height: 1080px;
+	object-fit: cover;
+
+  filter: brightness(50%)
+}
+
+.big-text{
+	position: absolute;
+  	top: 48%;
+  	left: 50%;
+	font-size: 80px;
+	color:azure ;
+	
+  	transform: translate(-50%, -50%);
+}
+.small-text{
+	position: absolute;
+  	top: 58%;
+  	left: 50%;
+	font-size: 30px;
+	color:aliceblue;
+	transform: translate(-50%, -50%);
+	
+}
+
+
+.box-main2{
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*
+.bg2 img{
+	width: 1920px;
+	height: 2000px;
+} 
+.start-button{
+	padding: 40px;
+	position: absolute;
+	tab-size: 200px;
+  	top: 160%;
+  	left: 20%;
+	font-size: 135px;
+	color:inherit;
+    border-radius: 26%;
+	font-family: Lucida Handwriting;
+	background: transparent;
+}
+.start-button:hover{
+	color:#668496;
+}
+
+*/
+
+/*responsive------------------------------------------------------------------------*/
+
+.burger{
+	display: none;
+	position: absolute;
+	top: 12px;
+	right: 40px;
+	color: aliceblue;
+	
+	
+}
+.sidenav {
+  display: none;
+  height: 50%;
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  background-color: rgba(0,0,0,0.60);
+  
+}
+
+.sidenav a{
+  font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif" ;
+  padding: 20px 5px 5px 20px;
+  top: 40px; 
+  text-decoration: none;
+  font-size: 18px;
+  color:aliceblue ;
+  display: block;
+  animation-delay: 0.3s;
+}
+
+.closebtn{
+	position: absolute;
+	top: 6px;
+	font-size: 50px;
+	color: aliceblue;
+	right: 40px;
+	cursor: pointer;
+}
+
+
+
+.menlogin{
+	position: absolute;
+	top: 250px;
+	left: 17px;
+	padding: 10px 60px;
+	background: #2b3245; 	
+	cursor: pointer;
+}
+.loginbtn-resp{
+	border:none;
+	background: #2b3245;
+	font-size: 16px;
+	color: #57abff;
+	cursor: pointer;		
+}
+
+.loginbtn-resp:hover{
+	color: antiquewhite;
+	
+}
+
+/*media-queary-----------------------------------------------------------------------------*/
+@media only screen and (max-width : 1500px ){
+	.bg img{
+		width: 1500px;
+		height: 1080px;
+    object-fit: cover;
+	}
+	.big-text{
+		font-size: 58px;
+	}
+	.small-text{
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width : 1200px ){
+	.logo-resp{	height: 130px;
+  width: 150px;
+  object-fit: cover;
+  object-position: 50% 50%;
+	border: #5E7E83;
+	border-radius: 0%;
+  }
+	.nav-list li{display: none;}
+	.rlist{display: none;}
+	.navbar{height: 70px;}
+	.burger{display: block;}
+	
+	.bg img{
+		width: 1200px;
+		height: 900px;		
+    object-fit: cover;
+	}
+	.big-text{
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		font-size: 60px;
+	}
+	.small-text{
+		position: absolute;
+		top: 48%;
+		left: 50%;
+		font-size: 27px;
+	}
+
+}
+
+
+@media only screen and (max-width : 1000px ){
+	.bg img{
+		width: 1000px;
+		height: 700px;
+    object-fit: cover;
+
+	}
+		.big-text{
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		font-size: 50px;
+	}
+	.small-text{
+		position: absolute;
+		top: 48%;
+		left: 50%;
+		font-size: 24px;
+	}
+
+
+	}
+
+
+
+@media only screen and (max-width : 900px ){
+	.bg img{
+		width: 900px;
+		height: 700px;
+    object-fit: cover;
+
+	}
+		.big-text{
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		font-size: 50px;
+	}
+	.small-text{
+		position: absolute;
+		top: 48%;
+		left: 50%;
+		font-size: 24px;
+	}
+
+
+	}
+
+
+@media only screen and (max-width : 800px ){
+	.bg img{
+		width: 800px;
+		height: 750px;
+    object-fit: cover;
+	}
+		.big-text{
+		position: absolute;
+		top: 43%;
+		left: 50%;
+		font-size: 35px;
+
+	}
+	.small-text{
+		position: absolute;
+		top: 48%;
+		left: 50%;
+		font-size: 16px;
+
+	}
+}
+
+@media only screen and (max-width : 600px ){
+	.bg img{
+		width: 600px;
+		height: 730px;
+    object-fit: cover;
+	}
+		.big-text{
+		position: absolute;
+		top: 43%;
+		left: 50%;
+		font-size: 30px;
+ 
+	}
+	.small-text{
+		position: absolute;
+		top: 48%;
+		left: 50%;
+		font-size: 13px;
+
+	}
+}
+@media only screen and (max-width : 500px ){
+	.bg img{
+		width: 500px;
+		height: 670px;
+    object-fit: cover;
+	}
+		.big-text{
+		position: absolute;
+		top: 43%;
+		left: 50%;
+		font-size: 26px;
+
+	}
+	.small-text{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font-size: 12px;
+   
+	}
+}
+
+@media only screen and (max-width : 410px ){
+	.bg img{
+		width: 400px;
+		height: 700px;
+    object-fit: cover;
+	}
+		.big-text{
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		font-size: 20px;
+    
+	}
+	.small-text{
+		position: absolute;
+		top: 44%;
+		left: 50%;
+		font-size: 11px;
+    
+	}
+
+
+	}
+
+  @media only screen and (max-width : 310px ){
+	.bg img{
+		width: 300px;
+		height: 700px;
+    object-fit: cover;
+	}
+		.big-text{
+		position: absolute;
+		top: 38%;
+		left: 50%;
+		font-size: 17px;
+    
+	}
+	.small-text{
+		position: absolute;
+		top: 43%;
+		left: 50%;
+		font-size: 11px;
+    
+	}
+
+
+	}
+
+
+
+    @media only screen and (max-width : 280px ){
+	.bg img{
+		width: 280px;
+		height: 700px;
+    object-fit: cover;
+	}
+		.big-text{
+		position: absolute;
+		top: 38%;
+		left: 50%;
+		font-size: 12px;
+    
+	}
+	.small-text{
+		position: absolute;
+		top: 44%;
+		left: 50%;
+		font-size: 7px;
+    
+	}
+
+
+	}
